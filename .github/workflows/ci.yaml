@@ -11,8 +11,19 @@ on:
       - next
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: volta-cli/action@v4
+      - run: npm ci
+      - run: npm test
+
   release:
     runs-on: ubuntu-latest
+
+    needs: test
 
     steps:
       - uses: actions/checkout@v3

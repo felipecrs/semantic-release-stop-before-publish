@@ -1,0 +1,33 @@
+{
+  "name": "semantic-release-stop-before-publish",
+  "version": "0.0.0-development",
+  "description": "semantic-release plugin to stop before reaching the publish step",
+  "main": "index.js",
+  "files": [],
+  "scripts": {
+    "test": "./test.sh"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/felipecrs/semantic-release-stop-before-publish.git",
+  "bugs": "https://github.com/felipecrs/semantic-release-stop-before-publish/issues",
+  "homepage": "https://github.com/felipecrs/semantic-release-stop-before-publish#readme",
+  "author": "Felipe Santos <felipecassiors@gmail.com>",
+  "peerDependencies": {
+    "semantic-release": ">=18"
+  },
+  "devDependencies": {
+    "semantic-release": "^19.0.2"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ]
+  },
+  "volta": {
+    "node": "16.18.0",
+    "npm": "8.19.2"
+  }
+}

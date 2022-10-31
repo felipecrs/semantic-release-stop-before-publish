@@ -1,0 +1,3 @@
+[submodule "test"]
+	path = test
+	url = ../semantic-release-stop-before-publish-test.git
